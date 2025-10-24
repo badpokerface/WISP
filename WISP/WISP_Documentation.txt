@@ -1,0 +1,75 @@
+WISP ver 1.00
+
+---------------------------------
+Overview
+---------------------------------
+WISP (Windows Installer Service Platform) is a Python-based graphical installer designed to simplify operating system deployment.
+It provides a lightweight GUI for selecting, verifying, and installing OS files.
+
+---------------------------------
+System Requirements
+---------------------------------
+Operating System: Windows 7 or later
+Python Version: 3.8 or higher
+Libraries: tkinter (standard)
+Disk Space: 100 MB minimum
+Memory: 2 GB recommended
+
+---------------------------------
+Getting Started
+---------------------------------
+1. Download the latest WISP version.
+        (download the latest python version too)
+2. Run the Python script:
+   python wisp_setup.py
+3. The GUI will open with options to select a .wisp file, choose architecture, and start installation.
+
+---------------------------------
+Interface Overview
+---------------------------------
+- Browse Button: Select a .wisp file.
+- Architecture Dropdown: x86, x64, or ARM.
+- Install OS Button: Starts installation.
+- Status Bar: Shows messages and results.
+
+---------------------------------
+File Handling
+---------------------------------
+WISP works with .wisp installer files containing setup scripts and OS images.
+Selecting a file validates and displays it in the status bar.
+
+---------------------------------
+Installation Workflow
+---------------------------------
+1. Launch WISP.
+2. Select .wisp file.
+3. Choose architecture.
+4. Click Install OS.
+5. Follow progress in the status bar.
+
+---------------------------------
+Troubleshooting
+---------------------------------
+Issue: "Please select a .wisp file"
+Cause: No file chosen
+Fix: Use Browse to select a valid .wisp file
+
+Issue: GUI not launching
+Cause: tkinter missing
+Fix: Reinstall or verify Python installation
+
+Issue: Status not updating
+Cause: Permission issue
+Fix: Run as administrator
+
+---------------------------------
+Developer Notes
+---------------------------------
+- Built with tkinter.
+- Easily extendable with real OS installation logic.
+- Designed for modular upgrades and scripting support.
+
+---------------------------------
+Version History
+---------------------------------
+1.00 (Stable) — Initial release.
